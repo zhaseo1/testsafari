@@ -1,0 +1,13 @@
+<form autocomplete="off" [formGroup]="formA">
+  <nx-checkbox formControlName="someId" (checkedChange)="toggleConsent()">
+    <div>
+        <p>SOME PARAGRAPH</p>
+      <ng-container>
+        <p>LOREM IPSUM</p>
+      </ng-container>
+    </div>
+
+    <nx-error *ngIf="!someId.valid && someId.touched"> ERROR PLEASE TICK THE CHECKBOX</nx-error>
+    <hr>
+  </nx-checkbox>
+</form>
