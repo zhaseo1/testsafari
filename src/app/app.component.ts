@@ -17,7 +17,7 @@ export class AppComponent {
   }
 
   toggleConsent(): void {
-    this.formA.controls.someId.markAsTouched();
+    //this.formA.controls.someId.markAsTouched();
   }
 
   get someId() {
